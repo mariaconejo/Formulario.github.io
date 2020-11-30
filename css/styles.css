@@ -1,0 +1,120 @@
+*{
+  font-family: 'Galada', cursive;
+}
+
+body{
+
+  margin: 0;
+  padding: 0;
+  background-image: url(https://media4.giphy.com/media/xThuWfz17d49nw1tKg/giphy.gif);
+
+}
+
+.container{
+  background-color: rgba(95, 143, 135, 0.9);
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+
+input::placeholder{
+  color: black;
+  font-size: 20px;
+
+}
+
+.container::before{
+  content: '';
+  width: 350px;
+  height: 500px;
+  background-color: rgba(129, 255, 234, 0.9);
+  position: absolute;
+}
+
+.info-area h1{
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  text-align: center;
+  color:black;
+  font-size: 35px;
+}
+
+.info-area p{
+  position: absolute;
+  top:50%;
+  left:22%;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-size: 25px;
+
+}
+
+.form-contact{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  overflow: hidden;
+}
+
+.form-contact input{
+  outline: none;
+  padding: 0 0 0 35px;
+  border: 1px solid rgba(0,0,0,0);
+  border-bottom-color: rgba(129, 255, 234, 0.9);
+  background: transparent;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 10px;
+  color:black;
+}
+
+
+#enviar{
+  padding: 60px 20px 20px 60px;
+  margin-top: 40px;
+  width: 100%;
+  border: none;
+  background-color: rgba(129, 255, 234, 0.9);
+  color: black;
+  cursor: pointer;
+  padding: 0;
+  font-size: 20px;
+}
+
+.lista{
+  margin-top: 700px ;
+  background-color: rgba(129, 255, 234, 0.9);
+  width: 800px;
+  height: 350px;
+  text-align: center;
+}
+
+
+.info{
+  text-align: center;
+  margin-right: 34px;
+
+}
+
+#lista-msj{
+  text-align: center;
+  margin-right: 30px;
+  font-size: 20px;
+
+}
+
+
+#lista-msj li{
+  list-style: none;
+
+
+}
