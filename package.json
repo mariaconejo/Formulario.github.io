@@ -1,9 +1,9 @@
 {
-  "name": "js2-project-template",
+  "name": "Formulario",
   "version": "2.0.0",
   "description": "CETAV Javascript 2 Project Template",
   "scripts": {
-    "sass": "node-sass -w sass -o css",
+    "sass": "node-sass -w sass -o public/css",
     "sass-build": "node-sass sass -o public/css --output-style compressed",
     "dev-server": "live-server --watch=\"index.html,sass,js\"",
     "eslint": "eslint js",

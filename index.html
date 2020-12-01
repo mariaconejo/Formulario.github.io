@@ -4,41 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="public/css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="info-area">
-      <h1>Formulario</h1>
-      <p>Llena el formulario con tus datos</p>
-    </div>
-    <div class="formulario">
-      <form class="form-contact" id="form-contact">
-
-        <input  type="text"    name="nombre"   value="" required placeholder="Nombre">
-
-        <input  type="email"   name="correo"   value="" required placeholder="Email">
-
-        <input  type="tel"     name="telefono" value="" placeholder="Telefono">
-
-        <input  type="text"    name="asunto"   value=""  required placeholder="Asunto">
-
-        <input  type="text"    name="mensaje"  value="" required placeholder="Mensaje">
-
-        <button id="enviar" type="submit">Enviar</button>
-      </form>
-    </div>
-    <div class="lista">
-      <div class="info">
-        <h1>Su mensaje ha sido enviado</h1>
-        <ul id="lista-msj">
-          <!--AQUI VA LOS LI-->
-        </ul>
-        <p>Pronto nos comunicaremos con ud. Gracias por su preferencia</p>
-        <button id="ok">OK</button>
+  <div class="container" id="container">
+      <div class="info-area">
+        <h1>Formulario</h1>
+        <p>Llena el formulario con tus datos</p>
       </div>
+      <!--FORMULARIO-->
+      <div class="formulario">
+        <form class="form-contact" id="form-contact">
+          <input  type="text"    name="nombre"   value="" required placeholder="Nombre">
+          <input  type="email"   name="correo"   value="" required placeholder="Email">
+          <input  type="tel"     name="telefono" value="" placeholder="Telefono">
+          <input  type="text"    name="asunto"   value="" required placeholder="Asunto">
+          <input  type="text"    name="mensaje"  value="" required placeholder="Mensaje">
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </div>
+  </div>
+  <!--MODAL-->
+  <div class="lista" id="lista">
+    <!--info del modal-->
+    <div class="info" id="info">
+      <h1 class="title">Su mensaje ha sido enviado</h1>
+      <!--ul-->
+      <ul id="lista-msj">
+        <!--AQUI VA LOS LI-->
+      </ul>
+      <p class="parrafo">Pronto nos comunicaremos con ud.</br> ¡Gracias por su preferencia!</p>
+      <button id="aceptar" type="submit">Aceptar</button>
     </div>
   </div>
   <script src="js/script.js"></script>

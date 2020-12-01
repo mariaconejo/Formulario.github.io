@@ -1,5 +1,5 @@
-$heading-color: #00f;
 
-h1 {
-  color: $heading-color;
-}
+@import'./config/Variables';
+@import'./partials/globales';
+@import'./partials/formulario';
+@import'./partials/modal';
