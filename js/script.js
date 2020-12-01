@@ -1,11 +1,14 @@
 //
 // JS2 Project template.
 //
+
+//variables del modal y el form
 const form = document.getElementById('form-contact');
 const modal = document.getElementById('lista');
 const ul = document.getElementById('lista-msj');
 const wrapper = document.getElementById('container');
 
+//funcion que crea los li dentro del modal
 function addform(values) {
   const item = document.createElement('li');
   item.innerHTML = `Nombre: ${values.name}`;
@@ -27,6 +30,7 @@ function addform(values) {
   item5.innerHTML = `Mensaje: ${values.message}`;
   ul.appendChild(item5);
 
+  // funcion que darle al boton aceptar borra el contenido de los input y regresa al formulario
   const boton = document.getElementById('aceptar');
   boton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -41,6 +45,7 @@ function addform(values) {
   });
 }
 
+// funcion que hace un metodo post en el api
 function ajax(msj) {
   const fetchOptions = {
     method: 'POST',
@@ -53,7 +58,8 @@ function ajax(msj) {
       addform(data);
     });
 }
-
+//funcion que obtiene los valores de los input que el usuario digito y si el telefono
+// no fue proporcionado sale un mensaje default y oculta el formulario y muestra el modal
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = form.elements[0].value;
